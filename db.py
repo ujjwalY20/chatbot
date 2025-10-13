@@ -1,7 +1,7 @@
 import mysql.connector
 global cnx
 
-cnx = mysql.connector.connect(host='localhost',password = '@Uu9268467460',user='root',database ='pandeyji_eatery')
+cnx = mysql.connector.connect(host='localhost',password = '',user='root',database ='pandeyji_eatery')
 
 # Function to call the MySQL stored procedure and insert an order item
 def insert_order_item(food_item, quantity, order_id):
@@ -103,4 +103,5 @@ def get_order_status(order_id):
     if result:
         return result[0]
     else:
+
         return None
